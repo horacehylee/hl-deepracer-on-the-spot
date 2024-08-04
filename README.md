@@ -1,4 +1,35 @@
 # DeepRacer On The Spot
+
+## Getting Started
+
+For JPMC AWS DeepRacer, we have to follow these steps to get access to AWS Console for its sandbox account'
+
+### Access to AWS Console
+
+1. Navigate to https://bit.ly/35KqkKb
+
+2. Login with your JPMC credentials
+
+3. Change region to "us-east-1"
+
+### Access to AWS Cli
+
+1. Navigate to "S3" services by searching for it in AWS Console
+
+2. Open bucket with name "<ACCOUNT>-l1-utilities" (i.e. 514734236355-l1-utilities)
+
+3. Open its readme file under "l1-adfs-toolkit/l1-pcl-readme.txt" and follow its instruction
+
+As of 20240308, the `l1-pcl-readme.txt` and latest `pcl` binary (1.3.4) has been downloaded to [./jpmc](./jpmc/) and can be used
+
+### Training
+
+./create-standard-instance.sh {baseStack} {yourStackName} {timeToLiveInMinutes}
+
+./create-standard-instance.sh hl-base {yourStackName} 1440
+
+## Introduction
+
 Simple cloudformation templates to assist in creating ec2 instances for deep racer learning, with automated training start/end and up to 10X savings over training in console (when using ec2 spot instance). This is a wrapper around LarsLL's deepracer-for-cloud https://aws-deepracer-community.github.io/deepracer-for-cloud/ to make it very easy to start training in the AWS Console and take advantage of all amazing tools the deepracer-for-cloud repo gives you. 
 
 Training on an EC2 has many advantages:
