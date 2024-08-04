@@ -14,7 +14,7 @@ Parameters:
     Description: timeout in minutes after which training is stopped and this stack is deleted
     Default: 60
     MinValue: 0
-    MaxValue: 1440 # 24 hours
+    MaxValue: 7200 # 5*24 hours
   AmiId:
     Type: String
     Description: the AMI we want to launch an ec2 instance against. By default this is the image created by central account 747447086422 owned by Tyler Wooten
