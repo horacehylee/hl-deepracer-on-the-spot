@@ -193,7 +193,7 @@ def calculate_heading_component(params):
     
     is_heading_unpardonable = False
     # calculate heading reward based on heading direction difference
-    if abs(heading_direction_diff) <= 90:
+    if abs(heading_direction_diff) <= 20:
         heading_reward = math.cos( abs(heading_direction_diff ) * ( math.pi / 180 ) ) ** 4
         heading_reward = HEADING_MULTIPLIER * heading_reward
     else:
@@ -243,7 +243,7 @@ def calculate_steering_component(params):
     STEERING_MULTIPLIER = 10
 
     is_steering_unpardonable = False
-    if abs(steering_direction_diff) <= 90:
+    if abs(steering_direction_diff) <= 20:
         steering_reward = math.cos( abs(steering_direction_diff ) * ( math.pi / 180 ) ) ** 4
         steering_reward = STEERING_MULTIPLIER * steering_reward
     else:

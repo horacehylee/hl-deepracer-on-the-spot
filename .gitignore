@@ -17,3 +17,7 @@
 __pycache__
 *.tar.gz
 *.zip
+
+.ipynb_checkpoints
+env
+venv

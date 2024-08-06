@@ -24,6 +24,10 @@ As of 20240308, the `l1-pcl-readme.txt` and latest `pcl` binary (1.3.4) has been
 
 ### Training
 
+./jpmc/pcl-linux/pcl aws --sandbox-user --domain ASIAPAC --sid {SID}
+
+export AWS_DEFAULT_PROFILE=adfs
+
 ./create-standard-instance.sh {baseStack} {yourStackName} {timeToLiveInMinutes}
 
 ./create-standard-instance.sh hl-base {yourStackName} 1440

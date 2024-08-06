@@ -9,11 +9,11 @@
       "low": 0.5
     }
   },
-  "sensor": [
-    "STEREO_CAMERAS"
-  ],
+  "sensor": ["FRONT_FACING_CAMERA"],
   "neural_network": "DEEP_CONVOLUTIONAL_NETWORK_SHALLOW",
   "version": "5",
   "training_algorithm": "sac",
-  "action_space_type": "continuous"
+  "action_space_type": "continuous",
+  "preprocess_type": "GREY_SCALE",
+  "regional_parameters": [0, 0, 0, 0]
 }
